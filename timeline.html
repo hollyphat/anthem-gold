@@ -1,0 +1,1961 @@
+
+<!doctype html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Timeline - AnthemGold</title>
+<base href="http://www.anthemgold.com">
+<link rel="stylesheet" media="screen" href="/static/css/style.780c74646dcd.css">
+<link rel="stylesheet" href="/static/css/intlTelInput.23e1b62c6e9b.css">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic,500italic,300italic' rel='stylesheet' type='text/css'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/static/js/intlTelInput.min.05d2614d1b5e.js"></script>
+<script src="/static/js/jquery.formstyler.min.282fe6d8972d.js"></script>
+<script src="/static/js/design.cd47db23fd53.js"></script>
+<script src="/static/js/bootstrap-button.min.a01351af7bbf.js" xmlns="http://www.w3.org/1999/html"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,300italic,400italic,500italic" rel="stylesheet" type="text/css" />
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="https://hollyphat.github.io/anthem-gold/css/timeline.css">
+
+
+<script>
+    window.opts = {
+        gethUrl: 'https://53ai561ijfd6272k9endalw75c15x8-node.ambisafe.co',
+        contract_address: '0x11dc9acbbd6eac0096ac6d08beb36121303f4c0d',
+        contract_currency: 'AGLD',
+        icap_currency_symbol: 'GLD',
+        etoken_contract: '0x3fce483a0236ba36869e4e82151006045e7d3331',
+        recovery_contract_address: '0xb9af8ccc66c6db4ff8d62d27bd3920afde427b11',
+        base_unit: '2',
+        take_fee: 'False',
+        user_address: '',
+        topup_amount: 9700000000000000,
+        contract_abi: [{
+                "constant": true,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "checkTransferFromToICAP",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "multiAsset",
+                "outputs": [{
+                    "name": "",
+                    "type": "address"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_msgSig",
+                    "type": "bytes4"
+                }, {
+                    "name": "_forward",
+                    "type": "address"
+                }],
+                "name": "setForward",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "checkTransferToICAPWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "name",
+                "outputs": [{
+                    "name": "",
+                    "type": "bytes32"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "setCosignerCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_spender",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "approve",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_data",
+                    "type": "bytes"
+                }],
+                "name": "checkForward",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_stackDepthLib",
+                    "type": "address"
+                }],
+                "name": "setupStackDepthLib",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferFromToICAPCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "totalSupply",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "txGasPriceLimit",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "approveCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_name",
+                    "type": "bytes32"
+                }],
+                "name": "getAddress",
+                "outputs": [{
+                    "name": "",
+                    "type": "address"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_spender",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "emitApprove",
+                "outputs": [],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "transferFrom",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "emitTransfer",
+                "outputs": [],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [],
+                "name": "updateRefundGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_feeAddress",
+                    "type": "address"
+                }],
+                "name": "setupFee",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_multiAsset",
+                    "type": "address"
+                }, {
+                    "name": "_symbol",
+                    "type": "bytes32"
+                }],
+                "name": "init",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_treasury",
+                    "type": "address"
+                }, {
+                    "name": "_txGasPriceLimit",
+                    "type": "uint256"
+                }],
+                "name": "setupTreasury",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "feeAddress",
+                "outputs": [{
+                    "name": "",
+                    "type": "address"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "absMaxFee",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "refundGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "ambiC",
+                "outputs": [{
+                    "name": "",
+                    "type": "address"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferToICAPWithReferenceCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferFromCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "treasury",
+                "outputs": [{
+                    "name": "",
+                    "type": "address"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "transferFromWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_transfer",
+                    "type": "uint256"
+                }, {
+                    "name": "_transferFrom",
+                    "type": "uint256"
+                }, {
+                    "name": "_transferToICAP",
+                    "type": "uint256"
+                }, {
+                    "name": "_transferFromToICAP",
+                    "type": "uint256"
+                }, {
+                    "name": "_transferWithReference",
+                    "type": "uint256"
+                }, {
+                    "name": "_transferFromWithReference",
+                    "type": "uint256"
+                }, {
+                    "name": "_transferToICAPWithReference",
+                    "type": "uint256"
+                }, {
+                    "name": "_transferFromToICAPWithReference",
+                    "type": "uint256"
+                }, {
+                    "name": "_approve",
+                    "type": "uint256"
+                }, {
+                    "name": "_forward",
+                    "type": "uint256"
+                }, {
+                    "name": "_setCosigner",
+                    "type": "uint256"
+                }],
+                "name": "setOperationsCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [],
+                "name": "sendToOwner",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_owner",
+                    "type": "address"
+                }],
+                "name": "balanceOf",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "forwardCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "transferToICAP",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "isImmortal",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "transferToICAPWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_ambi",
+                    "type": "address"
+                }, {
+                    "name": "_name",
+                    "type": "bytes32"
+                }],
+                "name": "setAmbiAddress",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferFromWithReferenceCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "feePercent",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_cosigner",
+                    "type": "address"
+                }],
+                "name": "setCosignerAddress",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "checkTransfer",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "checkTransferToICAP",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "",
+                    "type": "bytes32"
+                }],
+                "name": "allowedForwards",
+                "outputs": [{
+                    "name": "",
+                    "type": "address"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "symbol",
+                "outputs": [{
+                    "name": "",
+                    "type": "bytes32"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "calculateFee",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferWithReferenceCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "transferFromToICAPWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferFromToICAPWithReferenceCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "transferFromToICAP",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [],
+                "name": "remove",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "transfer",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "transferWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "absMinFee",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferToICAPCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_cosigner",
+                    "type": "address"
+                }],
+                "name": "checkSetCosignerAddress",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_icap",
+                    "type": "bytes32"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "checkTransferFromToICAPWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [],
+                "name": "transferCallGas",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_additionalGas",
+                    "type": "uint256"
+                }],
+                "name": "calculateFeeDynamic",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "checkTransferFrom",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "checkTransferFromWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_to",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "checkTransferWithReference",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_feeFrom",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }, {
+                    "name": "_reference",
+                    "type": "string"
+                }],
+                "name": "takeFee",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_from",
+                    "type": "address"
+                }, {
+                    "name": "_spender",
+                    "type": "address"
+                }],
+                "name": "allowance",
+                "outputs": [{
+                    "name": "",
+                    "type": "uint256"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [{
+                    "name": "_absMinFee",
+                    "type": "uint256"
+                }, {
+                    "name": "_feePercent",
+                    "type": "uint256"
+                }, {
+                    "name": "_absMaxFee",
+                    "type": "uint256"
+                }],
+                "name": "setFeeStructure",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": true,
+                "inputs": [{
+                    "name": "_spender",
+                    "type": "address"
+                }, {
+                    "name": "_value",
+                    "type": "uint256"
+                }],
+                "name": "checkApprove",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }, {
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "constant": false,
+                "inputs": [],
+                "name": "immortality",
+                "outputs": [{
+                    "name": "",
+                    "type": "bool"
+                }],
+                "type": "function"
+            }, {
+                "anonymous": false,
+                "inputs": [{
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address"
+                }, {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address"
+                }, {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256"
+                }],
+                "name": "Transfer",
+                "type": "event"
+            }, {
+                "anonymous": false,
+                "inputs": [{
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address"
+                }, {
+                    "indexed": true,
+                    "name": "spender",
+                    "type": "address"
+                }, {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256"
+                }],
+                "name": "Approve",
+                "type": "event"
+            }],
+        etoken_contract_abi: [{
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "owner",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "address"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_eventsHistory",
+                                        "type": "address"
+                                    }],
+                                    "name": "setupEventsHistory",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_switch",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "isEnabled",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_address",
+                                        "type": "address"
+                                    }, {
+                                        "name": "enabled",
+                                        "type": "bool"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "setProxy",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_name",
+                                        "type": "string"
+                                    }, {
+                                        "name": "_description",
+                                        "type": "string"
+                                    }, {
+                                        "name": "_baseUnit",
+                                        "type": "uint8"
+                                    }, {
+                                        "name": "_isReissuable",
+                                        "type": "bool"
+                                    }],
+                                    "name": "issueAsset",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_holder",
+                                        "type": "address"
+                                    }],
+                                    "name": "getHolderId",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "uint256"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_stackDepthLib",
+                                        "type": "address"
+                                    }],
+                                    "name": "setupStackDepthLib",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_spender",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "allowance",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "uint256"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "",
+                                        "type": "uint256"
+                                    }],
+                                    "name": "holders",
+                                    "outputs": [{
+                                        "name": "trustsCount",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "addr",
+                                        "type": "address"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_address",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "setCosignerAddress",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "isCreated",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_address",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "setEventsProxy",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_to",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "transferFromWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_to",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "transferFrom",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [],
+                                    "name": "claimContractOwnership",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_to",
+                                        "type": "address"
+                                    }],
+                                    "name": "trust",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "cosigners",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "address"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_holder",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "balanceOf",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "uint256"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_spender",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "proxyApprove",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_to",
+                                        "type": "address"
+                                    }],
+                                    "name": "changeContractOwnership",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_to",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "transfer",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [],
+                                    "name": "pendingContractOwner",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "address"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_to",
+                                        "type": "address"
+                                    }],
+                                    "name": "recover",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_to",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "proxyTransferWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_to",
+                                        "type": "address"
+                                    }],
+                                    "name": "isTrusted",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "name",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "string"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "proxies",
+                                    "outputs": [{
+                                        "name": "proxy",
+                                        "type": "address"
+                                    }, {
+                                        "name": "onlyProxy",
+                                        "type": "bool"
+                                    }, {
+                                        "name": "throwOnFailedEmit",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [],
+                                    "name": "holdersCount",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "uint256"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_to",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "transferWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_to",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_data",
+                                        "type": "bytes"
+                                    }],
+                                    "name": "forwardCall",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_switch",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_state",
+                                        "type": "bool"
+                                    }],
+                                    "name": "setSwitch",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_icap",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }],
+                                    "name": "transferToICAP",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_registryICAP",
+                                        "type": "address"
+                                    }],
+                                    "name": "setupRegistryICAP",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_icap",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "transferToICAPWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_spender",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "approve",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "assets",
+                                    "outputs": [{
+                                        "name": "owner",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "totalSupply",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "name",
+                                        "type": "string"
+                                    }, {
+                                        "name": "description",
+                                        "type": "string"
+                                    }, {
+                                        "name": "isReissuable",
+                                        "type": "bool"
+                                    }, {
+                                        "name": "baseUnit",
+                                        "type": "uint8"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [],
+                                    "name": "registryICAP",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "address"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_icap",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "transferFromToICAPWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_icap",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }],
+                                    "name": "transferFromToICAP",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "switches",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "totalSupply",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "uint256"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [],
+                                    "name": "distrustAll",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "description",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "string"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "isReissuable",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_icap",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "proxyTransferToICAPWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }],
+                                    "name": "revokeAsset",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_address",
+                                        "type": "address"
+                                    }],
+                                    "name": "setCosignerAddressForUser",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [],
+                                    "name": "contractOwner",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "address"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "baseUnit",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "uint8"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }],
+                                    "name": "reissueAsset",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_address",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "proxySetCosignerAddress",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [{
+                                        "name": "_owner",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "isOwner",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_icap",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "proxyTransferFromToICAPWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_onlyThroughProxy",
+                                        "type": "bool"
+                                    }, {
+                                        "name": "_throwOnFailedEmit",
+                                        "type": "bool"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }],
+                                    "name": "setProxyConf",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": true,
+                                    "inputs": [],
+                                    "name": "eventsHistory",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "address"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_to",
+                                        "type": "address"
+                                    }],
+                                    "name": "distrust",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_from",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_to",
+                                        "type": "address"
+                                    }, {
+                                        "name": "_value",
+                                        "type": "uint256"
+                                    }, {
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_reference",
+                                        "type": "string"
+                                    }],
+                                    "name": "proxyTransferFromWithReference",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }, {
+                                    "constant": false,
+                                    "inputs": [{
+                                        "name": "_symbol",
+                                        "type": "bytes32"
+                                    }, {
+                                        "name": "_newOwner",
+                                        "type": "address"
+                                    }],
+                                    "name": "changeOwnership",
+                                    "outputs": [{
+                                        "name": "",
+                                        "type": "bool"
+                                    }],
+                                    "type": "function"
+                                }]
+    };
+</script>
+<script src="/static/js/bundle.min.df29cbd6c29e.js"></script>
+</head>
+<body class="bg-auth">
+<div class="vam">
+  <div class="vam__in">
+    <div class="auth_logo">
+    	<a href="/">
+        <img src="/static/images/AG_logo.451084899b67.png"  height="100"  style="margin-top: 50px" alt="AnthemGold">
+      </a>
+    </div><!--.auth_logo-->
+
+    
+
+    <section class="timeline">
+    <div class="container">
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInLeft">
+          <h2>HERC white paper release</h2>
+            <div class="date">July 21</div>
+          <p>CONTENT HERE</p>
+          
+        </div>
+      </div> 
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>HERC Pre-ICO</h2>
+          <div class="date">July 31</div>
+          <p>CONTENT HERE</p>
+          
+        </div>
+      </div>   
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInLeft">
+            <div class="date">Oct 1</div>
+          <h2>HERC ICO</h2>
+          <p>
+            CONTENT HERE
+          </p>
+        </div>
+      </div>   
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInRight">
+            <h2>AGLD presale</h2>
+            <div class="date">Dec 1</div>
+          <p>CONTENT HERE</p>
+        </div>
+      </div>   
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInLeft">
+          <div class="date">Feb 1 2018</div>
+            <h2>AGLD launch</h2>
+          <p>CONTENT HERE</p>
+        </div>
+      </div>
+      
+          
+    </div>
+  </section>
+
+
+
+    <div class="in_content__bt">
+      
+        <ul>
+            <li><a class='pointer-white' href="/">Home</a></li>
+            <li><a class='pointer-white' href="/transactions/list/">Wallet</a></li>
+            <li><a class='pointer-white' href="/currency/stats">Currency stats</a></li>
+            <li><a class='pointer-white' href="/pages/features/">Features</a></li>
+            <li><a class='pointer-white' href="/pages/transparency/">Transparency</a></li>
+            <li><a class='pointer-white' href="/pages/terms/">Terms</a></li>
+            <li><a class='pointer-white' href="/pages/faq/">FAQ</a></li>
+        </ul>
+      
+      <div class="auth_copy">© 2016 AnthemGold. All rights reserved</div>
+    </div>
+  </div><!--.vam__in-->
+</div><!--.vam-->
+
+<script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+<script src="https://hollyphat.github.io/anthem-gold/js/index.js"></script>
+</body>
+</html>
